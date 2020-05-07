@@ -1,0 +1,6 @@
+[submodule "kobuki"]
+	path = kobuki
+	url = ./kobuki_stack/kobuki
+[submodule "kobuki_msgs"]
+	path = kobuki_msgs
+	url = ./kobuki_stack/kobuki_msgs/
