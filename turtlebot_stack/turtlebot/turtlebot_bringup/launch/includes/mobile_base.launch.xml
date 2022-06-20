@@ -14,7 +14,7 @@
     <arg name="serialport" value="$(arg serialport)"/>
     <arg name="manager" value="mobile_base_nodelet_manager"/>
   </include>
-  
+ 
   <!-- velocity commands multiplexer -->
   <node pkg="nodelet" type="nodelet" name="cmd_vel_mux" args="load yocs_cmd_vel_mux/CmdVelMuxNodelet mobile_base_nodelet_manager">
     <param name="yaml_cfg_file" value="$(find turtlebot_bringup)/param/mux.yaml"/>
