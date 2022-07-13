@@ -36,4 +36,5 @@ sudo apt install ros-melodic-ecl-threads \
 #### Make sure udev rules are setup
 
 `sudo apt install ros-melodic-kobuki-ftdi`
+
 `rosrun kobuki_ftdi create_udev_rules`
