@@ -17,6 +17,7 @@ sudo apt install ros-melodic-ecl-threads \
                  ros-melodic-image-geometry \
                  ros-melodic-joy \
                  ros-melodic-depth-image-proc
+                 ros-melodic-base-local-planner
 ```
 
 ## Clone the repo in `src` directory of a catkin workspace and build the packages.
