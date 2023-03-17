@@ -5,14 +5,15 @@
  -->
 <launch>
   <!-- mobile base nodelet manager -->
+  <arg name="publish_tf" default="true"/>
   <node pkg="nodelet" type="nodelet" name="mobile_base_nodelet_manager" args="manager"/>
-  
-  <!-- mobile base -->
+  <!--mobile base -->
   <arg name="base"/>
   <arg name="serialport"/>
   <include file="$(find turtlebot_bringup)/launch/includes/$(arg base)/mobile_base.launch.xml">
     <arg name="serialport" value="$(arg serialport)"/>
     <arg name="manager" value="mobile_base_nodelet_manager"/>
+    <arg name="kobuki_publish_tf" value="$(arg publish_tf)"/>
   </include>
  
   <!-- velocity commands multiplexer -->
